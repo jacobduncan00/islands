@@ -24,6 +24,10 @@ const Home: NextPage = () => {
 
   const resetCells = () => {
     console.log("RESET");
+    setRunningAlgo(false);
+    setCells(new Array(25).fill(0));
+    setNumCells(25);
+    setIslandCount(0);
   };
 
   const isValid = (map: any, i: any, j: any, visited: any) => {
